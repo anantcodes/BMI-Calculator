@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_blue_light">
 
     <TextView
+        android:id="@+id/txt_BMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/bmi_calculator"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_BMI"
+        android:hint="@string/enter_your_height"
+        android:background="@android:color/white"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_height"
+        android:hint="@string/enter_your_weight"
+        android:background="@android:color/white"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_weight"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
