@@ -30,27 +30,30 @@ class MainActivity : AppCompatActivity() {
 
             try{
 
-                val Height: Double = (etHeight.text.toString().toDouble())
-                val Weight: Double = (etWeight.text.toString().toDouble())
+                val h: Double = (etHeight.text.toString().toDouble())
+                val w: Double = (etWeight.text.toString().toDouble())
 
-                val h=Height/100;
+                val h1=h/100;
 
-                val bmi = Weight/(h*h)
+                val bmi = w/(h1*h1)
 
 // https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm
 
 
-                if(bmi < 18.5){
+                when {
+                    bmi < 18.5 -> {
 
-                    txtResult.text = (String.format("%.1f",bmi) + "(Underweight)")
-                }else if(bmi >= 18.5 && bmi <= 24.9){
+                        txtResult.text = (String.format("%.1f",bmi) + "(Underweight)")
+                    }
+                    bmi in 18.5..24.9 -> {
 
-                    txtResult.text = (String.format("%.1f",bmi) + "(Normal weight)")
-                }else if(bmi >= 25 && bmi <= 29.9){
-                    txtResult.text = (String.format("%.1f",bmi) + "(Overweight)")
+                        txtResult.text = (String.format("%.1f",bmi) + "(Normal weight)")
+                    }
+                    bmi in 25.0..29.9 -> {
+                        txtResult.text = (String.format("%.1f",bmi) + "(Overweight)")
+                    }
+                    bmi >=30 -> txtResult.text = (String.format("%.1f",bmi) + "(Obese)")
                 }
-                else if(bmi >=30)
-                    txtResult.text = (String.format("%.1f",bmi) + "(Obese)")
 
             }catch (e: Exception){
 
