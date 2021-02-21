@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        title="BMI Calculator"
 
         //variables initialised
 
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     bmi>=30 -> txtResult.text = (String.format("%.1f",bmi) + "(Obese)")
                 }
             }catch (e: Exception){
-                val toast: Toast = Toast.makeText(applicationContext, "Please enter the number", Toast.LENGTH_SHORT)
+                val toast: Toast = Toast.makeText(applicationContext, "Please enter valid data", Toast.LENGTH_SHORT)
                 txtResult.text=""
                 toast.setGravity(Gravity.CENTER, 0,0)
                 toast.show()

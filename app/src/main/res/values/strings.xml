@@ -5,4 +5,8 @@
     <string name="enter_your_weight">Enter your weight</string>
     <string name="submit">Submit</string>
     <string name="result">RESULT</string>
+    <string name="enter_the_height_cm">Enter the height(cm)</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="enter_the_weight_kg">Enter the weight(Kg)</string>
 </resources>
