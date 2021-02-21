@@ -4,8 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ControlActivity">
+    tools:context=".ControlActivity"
+    android:background="@android:color/holo_blue_light">
 
+    <TextView
+        android:id="@+id/txt_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is BMI ?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/txt_def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_below="@+id/txt_quest"
+        android:text="@string/body_mass_index_bmi_is_a_measure_of_body_fat_based_on_height_and_weight_that_applies_to_adult_men_and_women"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:text="@string/bmi_categories"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt_def"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/txt_cat"
+        android:text="@string/underweight_18_5"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_l1"
+        android:text="@string/normal_weight_18_5_24_9"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/txt_l2"
+        android:text="@string/overweight_25_29_9"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_l4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/txt_l3"
+        android:text="@string/obesity_bmi_of_30_or_greater"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_your_bmi"
+        android:layout_below="@id/txt_l4"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>

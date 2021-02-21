@@ -9,4 +9,11 @@
     <string name="height">Height:</string>
     <string name="weight">Weight:</string>
     <string name="enter_the_weight_kg">Enter the weight(Kg)</string>
+    <string name="body_mass_index_bmi_is_a_measure_of_body_fat_based_on_height_and_weight_that_applies_to_adult_men_and_women">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</string>
+    <string name="bmi_categories">BMI Categories:</string>
+    <string name="underweight_18_5"><![CDATA[Underweight = <18.5]]></string>
+    <string name="normal_weight_18_5_24_9">Normal weight = 18.5–24.9</string>
+    <string name="overweight_25_29_9">Overweight = 25–29.9</string>
+    <string name="obesity_bmi_of_30_or_greater">Obesity = BMI of 30 or greater</string>
+    <string name="check_your_bmi">Check your BMI</string>
 </resources>
