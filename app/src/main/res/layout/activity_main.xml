@@ -52,7 +52,6 @@
         android:background="@android:color/holo_orange_light"
         android:layout_centerHorizontal="true"/>
 
-
     <TextView
         android:id="@+id/txt_result"
         android:layout_width="wrap_content"
@@ -62,7 +61,5 @@
         android:text="@string/result"
         android:layout_centerHorizontal="true"
         android:textSize="40sp"/>
-
-
 
 </RelativeLayout>
