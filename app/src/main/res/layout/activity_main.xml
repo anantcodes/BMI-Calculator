@@ -53,5 +53,16 @@
         android:layout_centerHorizontal="true"/>
 
 
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Submit"
+        android:layout_marginTop="50dp"
+        android:text="@string/result"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"/>
+
+
 
 </RelativeLayout>

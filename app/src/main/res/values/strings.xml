@@ -4,4 +4,5 @@
     <string name="enter_your_height">Enter your height</string>
     <string name="enter_your_weight">Enter your weight</string>
     <string name="submit">Submit</string>
+    <string name="result">RESULT</string>
 </resources>
