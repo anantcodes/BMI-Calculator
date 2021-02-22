@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_Submit"
         android:layout_marginTop="50dp"
-        android:text="@string/result"
+        android:text=""
         android:layout_centerHorizontal="true"
         android:textSize="30sp"/>
 
