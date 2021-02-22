@@ -18,16 +18,6 @@ class ControlActivity : AppCompatActivity() {
                 Intent(this,
                     MainActivity::class.java)
             )
-
         }
-
-
-
-
-
-
-
-
-
     }
 }

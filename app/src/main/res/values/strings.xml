@@ -16,4 +16,5 @@
     <string name="overweight_25_29_9">Overweight = 25–29.9</string>
     <string name="obesity_bmi_of_30_or_greater">Obesity = BMI of 30 or greater</string>
     <string name="check_your_bmi">Check your BMI</string>
+    <string name="what_is_bmi">What is BMI ?</string>
 </resources>
