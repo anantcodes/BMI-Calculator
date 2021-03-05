@@ -27,4 +27,6 @@ A BMI calculator android application using Kotlin.
 
 ![BMI Generation](https://github.com/anantcodes/BMI-Calculator/blob/master/app/src/main/res/drawable/finalbmi.jpeg)
 
+### Open to contributions and enhancement
+
 
